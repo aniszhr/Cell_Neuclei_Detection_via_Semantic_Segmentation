@@ -16,10 +16,13 @@ The model is trained with [Data Science Bowl 2018 dataset](https://www.kaggle.co
 ### 3.1 Input Pipeline
 <p>The dataset files contains a train folder for training data and test folder for testing data, in the format of images for inputs and image masks for the labels. The input images are preprocessed with feature scaling. The labels are preprocessed such that the values are in binary of 0 and 1. No data augmentation is applied for the dataset. The train data is split into train-validation sets, with a ratio of 80:20</p>
 
-### 32 Model Pipeline
+### 3.2 Model Pipeline
 <p>The model architecture used for this project is U-Net. Do refer to the TensorFlow documentation for further details. To summarize, the model consist of two components, the downward stack, which serves as the feature extractor, and upward stack, which helps to produce pixel-wise output.<br>
  
 The model is trained with batch size 16 and 100 epochs. The training stops at epochs of 24 after early stopping is applied with training accuracy of 96% and loss 0.0914.</p>
+
+![model_p4](https://user-images.githubusercontent.com/72061179/165106550-bab0d142-ea5c-4aea-be1f-ba49117acdd0.png)
+
 
 ## 4. Result
 
